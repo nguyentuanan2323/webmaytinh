@@ -1,0 +1,17 @@
+<head><link href="https://fonts.googleapis.com/css?family=Alegreya+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans" rel="stylesheet">
+</head>
+<app-nav></app-nav>
+
+<div class="container-fluid">
+    <div class="row content canhle" *ngFor="let data of dataDetail">
+        <div><h1 class="text-center" style="font-family: 'Alegreya Sans', sans-serif;">{{data.TieuDe}}</h1></div>
+        <div class="col-md-12"  style="font-family: 'Alegreya Sans', sans-serif;">
+            <img src="{{data.HinhAnh[1].hinhnen}}" style="height: 100%; width: 100%; display: block;" class="img-fluid">
+            <p class="letrenmoidoan">{{data.NoiDung}}</p>
+        </div>
+
+    </div>
+</div>
+
+<app-footer></app-footer>
